@@ -1,14 +1,18 @@
+.filters {
+        padding-top: 60px;
+}
 .filters-list {
         display: flex;
         flex-wrap: wrap;
         align-items: center;
         justify-content: start;
-        margin-top: 60px;
         margin-bottom: 40px;
 }
 .filters-list__item {
-        margin-left: 8px;
         margin-bottom: 10px;
+}
+.filters-list__item:not(:last-child) {
+        margin-right: 8px;
 }
 .filters-btn {
             font-family: inherit;
@@ -32,7 +36,11 @@
                 border-radius: 4px;
             }
 }
-
+@media screen and (max-width: 767px) {
+        .filters-list__item:nth-last-of-type(-n+2) {
+                margin-bottom: 0;
+        }
+}
 
 @media screen and (min-width: 768px) {
         .filters-list {

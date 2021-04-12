@@ -20,6 +20,7 @@
     }
 }
 .mobile-menu {
+    z-index: 1;
     position: fixed;
     top: 0;
     left: 50%;
@@ -51,13 +52,15 @@
     }
 }
 .mobile-contact {
+    position: fixed;
+    bottom: 134px;
     &__tel {
-    font-style: normal;
-    font-weight: 500;
-    font-size: 34px;
-    line-height: 40px;
-    letter-spacing: 1.25;
-    color: var(--accept-color);
+        font-style: normal;
+        font-weight: 500;
+        font-size: 34px;
+        line-height: 40px;
+        letter-spacing: 1.25;
+        color: var(--accept-color);
     }
 
     &__mail {
@@ -68,17 +71,11 @@
         letter-spacing: 1.17;
         color: var(--secondary-text-color);
     }
-    &__item:not(:last-child) {
-        padding-top: 302px;
-        padding-bottom: 32px;
-    }
-    &__item:not(:first-child) {
-        margin-bottom: 64px;
-    }
 }
 .mobile-social {
     display: flex;
-
+    position: fixed;
+    bottom: 48px;
     &__link {
         font-style: normal;
         font-weight: 500;

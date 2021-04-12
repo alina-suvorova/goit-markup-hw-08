@@ -38,7 +38,7 @@
 }
 .address-list__item {
         &:not(:last-child) {
-        padding-bottom: 8px;
+        margin-bottom: 8px;
         }
     }
 .contact-list__link {
@@ -133,7 +133,7 @@
         }
 }
 .footer-form__btn {
-        position: relative;
+        // position: relative;
         display: inline-flex;
         font-family: inherit;
         font-weight: bold;
@@ -159,17 +159,21 @@
 }
 .footer-form__icon_send {
         display: block;
+        margin-left: 10px;
         fill: #ffffff;
         width: 24px;
         height: 24px;
-        position: absolute;
+        // position: absolute;
         top: 50%;
         right: 28px;
-        transform: translateY(-50%);
+        // transform: translateY(-50%);
 }
 @media screen and (max-width: 767px) {
     .footer {
         text-align: center;
+    }
+    .footer-container {
+        margin-bottom: 60px;
     }
     .footer-list-icon {
         justify-content: center;
@@ -178,9 +182,9 @@
     .footer-form__input {
         width: 100%;
     }
-    .footer-icon-container__title {
-        margin-top: 60px;
-    }
+    // .footer-icon-container__title {
+    //     margin-top: 60px;
+    // }
     .footer-list-icon {
         margin-bottom: 60px;
     }

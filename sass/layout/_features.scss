@@ -43,7 +43,9 @@
     line-height: 1.71;
     letter-spacing: 0.03em;
     color: var(--secondary-text-color);
-    padding-bottom: 30px;
+}
+.features-list__item {
+    margin-bottom: 30px;
 }
 .features-list__icon-wrapper {
     display: flex;
@@ -78,7 +80,7 @@
         text-transform: uppercase;
         margin-bottom: 15px;
     }
-    .features-list__description {
+    .features-list__item {
         width: 354px;
     }
 }
