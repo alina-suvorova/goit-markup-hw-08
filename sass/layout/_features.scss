@@ -1,0 +1,114 @@
+
+// .features-list__title {
+//     font-weight: bold;
+//     font-size: 14px;
+//     line-height: 1.14;
+//     letter-spacing: 0.03em;
+//     text-transform: uppercase;
+//     margin-bottom: 15px;
+// }
+// .features-list__description {
+//     font-weight: normal;
+//     font-size: 14px;
+//     line-height: 1.71;
+//     letter-spacing: 0.03em;
+//     color: var(--secondary-text-color);
+// }
+// .features-list {
+//     display: flex;
+// }
+// .features-list__icon-wrapper {
+//     display: flex;
+//     align-items: center;
+//     justify-content: center;
+//     width: 270px;
+//     height: 120px;
+//     background-color: var(--background-btn);
+//     margin-bottom: 30px;
+// }
+// .features-list__item:not(:first-child) {
+//     margin-left: 30px;
+// }
+
+
+
+
+.features {
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+.features-list__description {
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: var(--secondary-text-color);
+    padding-bottom: 30px;
+}
+.features-list__icon-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 450px;
+    height: 120px;
+    background-color: var(--background-btn);
+    margin-bottom: 30px;
+    
+}
+@media screen and (max-width: 767px) {
+    .features-list__title {
+        text-align: center;
+        font-weight: bold;
+        font-size: 14px;
+        line-height: 1.14;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+        margin-bottom: 15px;
+    }
+}
+@media screen and (min-width: 768px) {
+    .features-list__icon-wrapper {
+        width: 354px;
+    }
+    .features-list__title {
+        font-weight: bold;
+        font-size: 14px;
+        line-height: 1.14;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+        margin-bottom: 15px;
+    }
+    .features-list__description {
+        width: 354px;
+    }
+}
+@media screen and (max-width: 1199px) {
+    .features-list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+}
+@media screen and (min-width: 1200px) {
+    .features {
+        padding-top: 94px;
+    }
+    .features-list {
+        display: flex;
+    }
+    .features-list__icon-wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 270px;
+        height: 120px;
+        background-color: var(--background-btn);
+        margin-bottom: 30px;
+    }
+    .features-list__item:not(:first-child) {
+        margin-left: 30px;
+    }
+    .features-list__description {
+        width: 270px;
+    }
+}

@@ -1,0 +1,147 @@
+.hero {
+        background-color: var(--background-color-header-footer);
+        margin: 0 auto;
+        background-image: linear-gradient(
+            rgba(47, 48, 58, 0.4),
+            rgba(47, 48, 58, 0.4)
+            ), url("../images/bg-mobile.jpg");
+
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding-top: 118px;
+        padding-bottom: 118px;
+}
+
+
+@media screen and (min-device-pixel-ratio: 2),
+        screen and (min-resolution: 192dpi),
+        screen and (min-resolution: 2dppx) {
+        .hero {
+          background-image: linear-gradient(
+                rgba(47, 48, 58, 0.4),
+                rgba(47, 48, 58, 0.4)
+                ), url("../images/bg-mobile@2x.jpg");
+        }
+      }
+
+.hero__title {
+        width: 360px;
+        margin: 0 auto;
+        font-style: normal;
+        font-weight: 900;
+        font-size: 26px;
+        line-height: 42px;
+        text-align: center;
+        letter-spacing: 1.61;
+        text-transform: uppercase;
+        color: var(--dark-theme-text);
+}
+.hero__btn {
+        margin: 0 auto;
+        width: 200px;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+        border-radius: 4px;
+        border: 0px;
+        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        &:hover, 
+        &:focus {
+            background-color: var(--highlight-color);
+        }
+        font-style: normal;
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 30px;
+        display: flex;
+        align-items: center;
+        margin-top: 30px;
+        padding: 10px 35px;
+        letter-spacing: 1.87;
+        color: var(--dark-theme-text);
+        background: var(--accept-color);
+        cursor: pointer;
+}
+
+@media screen and (min-width: 768px) {
+        .hero {
+                background-image: linear-gradient(
+                        rgba(47, 48, 58, 0.4),
+                        rgba(47, 48, 58, 0.4)
+                        ), url("../images/bg-tablet.jpg");
+        }
+        
+        
+        @media screen and (min-device-pixel-ratio: 2),
+                screen and (min-resolution: 192dpi),
+                screen and (min-resolution: 2dppx) {
+                .hero {
+                  background-image: linear-gradient(
+                        rgba(47, 48, 58, 0.4),
+                        rgba(47, 48, 58, 0.4)
+                        ), url("../images/bg-tablet@2x.jpg");
+                }
+              }
+}
+
+@media screen and (min-width: 1200px) {
+        .hero {
+                max-width: 1600px;
+                background-image: linear-gradient(
+                                rgba(47, 48, 58, 0.4),
+                                rgba(47, 48, 58, 0.4)
+                                ), url("../images/bg-desktop.jpg");
+        }
+        
+        @media screen and (min-device-pixel-ratio: 2),
+                screen and (min-resolution: 192dpi),
+                screen and (min-resolution: 2dppx) {
+                        .hero {
+                                background-image: linear-gradient(
+                                rgba(47, 48, 58, 0.4),
+                                rgba(47, 48, 58, 0.4)
+                                ), url("../images/bg-desktop@2x.jpg");
+                        }
+                }
+}
+
+// .hero {
+//     background-color: var(--background-color-header-footer);
+//     max-width: 1600px;
+//     margin: 0 auto;
+//     background-image: linear-gradient(
+//         rgba(47, 48, 58, 0.4),
+//         rgba(47, 48, 58, 0.4)
+//         ), url("../images/background-desctop.jpg");
+//     background-repeat: no-repeat;
+//     background-size: cover;
+// }
+// .hero__title {
+//     font-weight: 900;
+//     font-size: 44px;
+//     line-height: 1.36;
+//     letter-spacing: 0.06em;
+//     text-transform: uppercase;
+//     color: var(--dark-theme-text);
+//     width: 696px;
+//     text-align: center;
+//     margin: 0 auto;
+// }
+// .hero__btn {
+//     font-family: inherit;
+//     font-weight: bold;
+//     font-size: 16px;
+//     min-width: 200px;
+//     padding: 15px 30px;
+//     line-height: 1.88;
+//     letter-spacing: 0.06em;
+//     color: var(--dark-theme-text);
+//     background: var(--accept-color);
+//     cursor: pointer;
+//     margin-top: 35px;
+//     border-radius: 5px;
+//     border: 0px;
+//     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+//     &:hover, 
+//     &:focus {
+//         background-color: var(--highlight-color);
+//     }
+// }
