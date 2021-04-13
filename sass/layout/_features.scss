@@ -67,6 +67,9 @@
         text-transform: uppercase;
         margin-bottom: 15px;
     }
+    .features-list__item:last-child {
+        margin-bottom: 0px;
+    }
 }
 @media screen and (min-width: 768px) {
     .features-list__icon-wrapper {
@@ -82,6 +85,9 @@
     }
     .features-list__item {
         width: 354px;
+    }
+    .features-list__item:nth-last-of-type(-n+2){
+        margin-bottom: 0;
     }
 }
 @media screen and (max-width: 1199px) {
@@ -112,5 +118,8 @@
     }
     .features-list__description {
         width: 270px;
+    }
+    .features-list__item {
+        margin-bottom: 0;
     }
 }
